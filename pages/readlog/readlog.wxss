@@ -90,7 +90,7 @@
 .top-bar-item {
   display: inline-block;
   background: #fff;
-  width: 16%;
+  width: 20%;
   color: #9babba;
   text-align: center;
   line-height: 100rpx;

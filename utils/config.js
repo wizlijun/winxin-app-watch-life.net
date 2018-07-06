@@ -13,10 +13,10 @@
 
 //配置域名,域名只修改此处。
 //如果wordpress没有安装在网站根目录请加上目录路径,例如："www.watch-life.net/blog"
-var DOMAIN = "www.watch-life.net";
+var DOMAIN = "faq.wiz.cn";
 var MINAPPTYPE="0";//小程序的类型，如果是企业小程序请填：0 ，如果是个人小程序请填：1
-var WEBSITENAME="守望轩"; //网站名称
-var ABOUTID = 1136; //wordpress网站"页面"的id,注意这个"页面"是wordpress的"页面"，不是"文章"
+var WEBSITENAME="为知笔记帮手"; //网站名称
+var ABOUTID = 8; //wordpress网站"页面"的id,注意这个"页面"是wordpress的"页面"，不是"文章"
 var PAGECOUNT='10'; //每页文章数目
 var CATEGORIESID='all'  //专题页显示全部的分类
 //var CATEGORIESID = '1,1059,98,416,189,374,6,463';//指定专题页显示的分类的id
@@ -30,8 +30,8 @@ var POSTERIMGURL ="../../images/logo700.png"; //生成海报如果没有首图�
 //设置downloadFile合法域名,不带https ,在中括号([])里增加域名，格式：{id=**,domain:'www.**.com'}，用英文逗号分隔。
 //此处设置的域名和小程序与小程序后台设置的downloadFile合法域名要一致。
 var DOWNLOADFILEDOMAIN = [
-    { id: 1, domain: 'www.watch-life.net' },
-    { id: 2, domain: 'watch-life.net' },
+    { id: 1, domain: 'faq.wiz.cn' },
+    { id: 2, domain: 'cdn.wiz.cn' },
     { id: 3, domain: 'www.qiniu.com' }
 ]
  //首页图标导航
@@ -39,9 +39,8 @@ var DOWNLOADFILEDOMAIN = [
  //        'appid' 当redirecttype为miniapp时，这个值为其他微信小程序的appid，如果redirecttype为apppage，webpage时，这个值设置为空。
  //         'extraData'当redirecttype为miniapp时，这个值为提交到其他微信小程序的参数，如果redirecttype为apppage，webpage时，这个值设置为空。
 var INDEXNAV = [
-    { id: '1', name: '微店', image: '../../images/shop.png', url: 'pages/shelf/shelf', redirecttype: 'miniapp', appid: 'wx55ea6098e41af5c4', extraData:'' },
     { id: '2', name: '排行', image: '../../images/ranking.png', url: '../hot/hot', redirecttype: 'apppage', appid: '', extraData:''},   
-    { id: '3', name: '教程', image: '../../images/app.png', url: '../list/list?categoryID=98', redirecttype: 'apppage', appid: '', extraData: '' },
+    { id: '3', name: '帮助', image: '../../images/app.png', url: '../list/list?categoryID=10', redirecttype: 'apppage', appid: '', extraData: '' },
    ]
 
 export default {
